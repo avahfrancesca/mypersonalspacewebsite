@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+            padding: 1rem;
+            background: linear-gradient(to bottom right, maroon, white);
+        }
+
+        #left-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-right: 1rem;
+        }
+
+        .space {
+            font-family: 'Rouge Script', cursive;
+            font-size: 5rem;
+            font-weight: 590;
+            color: black;
+            margin-bottom: 1rem;
+        }
+
+        .picture-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .picture-container a {
+            transition: transform 0.3s;
+        }
+
+        .picture-container a:hover {
+            transform: scale(1.1);
+        }
+
+        .picture-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .name {
+            font-size: 1.3rem;
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .lgn-button {
+            background-color: #9f3a3a;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .lgn-button:hover {
+            background-color: #800000;
+        }
+
+        #right-side {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .homepic-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .home-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            #left-side {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                padding: 1rem;
+            }
+
+            .space {
+                font-size: 2rem;
+            }
+
+            .picture-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .picture-container img {
+                width: 120px;
+                height: auto;
+            }
+
+            .home-img img {
+                height: auto;
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .space {
+                font-size: 1.5rem;
+            }
+
+            .name {
+                font-size: 1rem;
+            }
+
+            .lgn-button {
+                padding: 0.5rem 1rem;
+            }
+
+            .picture-container img {
+                width: 100px;
+            }
+        }
+    </style>
+
+    <div id="left-side">
+        <h1 class="space">My Personal Space</h1>
+        <p class="name">Avah Francesca Pasigue | IT Student</p>
+        <a class="lgn-button" href="mainpage.html">Login</a>
+        <div class="picture-container">
+            <a class="pic-1" href="https://www.facebook.com/avahnana.a" target="_blank"><img src="../icons/fb.png"
+                    alt="image" width="140px"></a>
+            <a class="pic-2" href="https://www.messenger.com/e2ee/t/6725882180828486/" target="_blank"><img
+                    src="../icons/mess.png" alt="image" width="150px" height="150px"></a>
+            <a class="pic-3" href="https://www.instagram.com/avahduds/" target="_blank"><img src="../icons/ig.png"
+                    alt="image" width="135px"></a>
+        </div>
+    </div>
+
+    <div id="right-side">
+        <nav class="homepic-container">
+            <a class="home-img"><img src="images/feur.jpg" alt="Home Image"></a>
+        </nav>
+    </div>
+</body>
+
+</html>

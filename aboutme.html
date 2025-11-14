@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <title>About Me</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: maroon;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 20px;
+        }
+
+        #header img {
+            width: 100px;
+            
+        }
+
+        #header h3 {
+            font-family: 'Rouge Script', cursive;
+            font-size: 4rem;
+            font-weight: 590;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .abtme-container {
+            flex: 1;
+            background: none; 
+            border: none; 
+            box-shadow: none; 
+        }
+
+        .intro {
+            line-height: 2.5;
+            font-size: 30px;
+            margin: 0;
+            color: black;
+        }
+
+        ul {
+            margin: 0 0 0 20px;
+            padding: 0;
+        }
+
+        .abtmepic-container img {
+            width: 650px;
+            margin-top: -19px;
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .abtmepic-container img {
+                width: 80%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+  <h2>About Me</h2>
+  <a href="mainpage.html"><img src="icons/home.png" alt="Home" width="150px"></a>
+</nav>
+
+    <div class="about-section">
+      
+        <div class="abtme-container">
+            <p class="intro"><ins><b>Name:</b></ins> Avah Francesca Pasigue</p>
+            <p class="intro"><ins><b>Program:</b></ins> Bachelor of Science in Information Technology (BSIT)</p>
+            <p class="intro"><ins><b>Year level & Section:</b></ins> 1st Year - Section 1</p>
+            <p class="intro"><ins><b>Institution:</b></ins> FEU Roosevelt, Marikina Campus</p>
+            <p class="intro"><ins><b>Academic Year:</b></ins> 2025 - 2026</p>
+
+            <p class="intro"><ins><b>Skills & Knowledge:</b></ins></p>
+            <ul>
+                <li class="intro">Basic Programming Languages: C++, Python, CSS, HTML</li>
+                <li class="intro">Basic Web Knowledge (static web styling and layout)</li>
+                <li class="intro">Basic Understanding of how to add interactivity to web pages</li>
+                <li class="intro">Able to create simple flowcharts and logic structures</li>
+                <li class="intro">Understanding of common hardware/software issues</li>
+            </ul>
+
+            <p class="intro"><ins><b>Goals:</b></ins></p>
+            <ul>
+                <li class="intro">Build interactive web applications and software tools</li>
+                <li class="intro">Pursue internships and certifications in the tech field</li>
+            </ul>
+        </div>
+
+        <div class="abtmepic-container">
+            <img src="images/am.jpg" alt="Picture">
+        </div>
+    </div>
+</body>
+
+</html>
